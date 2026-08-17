@@ -104,6 +104,39 @@ li {
   color: #102a43;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #d8e1ea;
+  vertical-align: top;
+}
+
+th {
+  background: #102a43;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.small-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #52606d;
+}
+
 footer {
   background: #102a43;
   color: #d9e6f2;
@@ -133,6 +166,11 @@ footer a {
   .card {
     padding: 22px;
   }
+
+  th,
+  td {
+    min-width: 190px;
+  }
 }
 </style>
 </head>
@@ -161,6 +199,80 @@ footer a {
   </div>
 
   <section class="card">
+    <h2>Quick Decision Guide</h2>
+
+    <p>
+      Use this quick framework to identify which direction is most likely
+      to fit your current business requirements.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>If your priority is...</th>
+            <th>Likely direction</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Simple newsletters and straightforward campaigns</td>
+            <td><strong>Mailchimp</strong></td>
+            <td>
+              A familiar workflow may already meet your needs without
+              creating unnecessary migration work.
+            </td>
+          </tr>
+
+          <tr>
+            <td>More sophisticated marketing automation</td>
+            <td><strong>ActiveCampaign</strong></td>
+            <td>
+              More complex customer journeys may benefit from stronger
+              automation capabilities.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Stronger CRM and marketing alignment</td>
+            <td><strong>ActiveCampaign</strong></td>
+            <td>
+              CRM-oriented workflows can become more valuable as sales
+              and marketing processes become more connected.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Minimum migration disruption</td>
+            <td><strong>Stay with your current platform</strong></td>
+            <td>
+              If the existing system already meets your requirements,
+              migration effort may outweigh the expected benefit.
+            </td>
+          </tr>
+
+          <tr>
+            <td>Highly specialized requirements</td>
+            <td><strong>Consider alternatives</strong></td>
+            <td>
+              A specialized platform may provide a better fit for your
+              workflow, budget, or integrations.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="small-note">
+      This table is a decision-support framework, not a universal ranking.
+      The best choice depends on your actual workflows, requirements,
+      budget, integrations, and willingness to migrate.
+    </p>
+  </section>
+
+  <section class="card">
     <h2>Who This Guide Is For</h2>
 
     <p>
@@ -175,15 +287,35 @@ footer a {
     <h2>The Actual Problem at 5,000–10,000 Contacts</h2>
 
     <ul>
-      <li><strong>Automation complexity:</strong> More sophisticated customer journeys may require branching workflows and behavioral triggers.</li>
+      <li>
+        <strong>Automation complexity:</strong>
+        More sophisticated customer journeys may require branching
+        workflows and behavioral triggers.
+      </li>
 
-      <li><strong>Segmentation:</strong> Growing databases often require more flexible filtering, tagging, and dynamic audience management.</li>
+      <li>
+        <strong>Segmentation:</strong>
+        Growing databases often require more flexible filtering,
+        tagging, and dynamic audience management.
+      </li>
 
-      <li><strong>CRM and sales alignment:</strong> Marketing teams may need stronger connections between campaigns, leads, and sales follow-up.</li>
+      <li>
+        <strong>CRM and sales alignment:</strong>
+        Marketing teams may need stronger connections between campaigns,
+        leads, and sales follow-up.
+      </li>
 
-      <li><strong>Migration:</strong> Moving contacts, fields, consent records, forms, integrations, and workflows requires careful planning.</li>
+      <li>
+        <strong>Migration:</strong>
+        Moving contacts, fields, consent records, forms, integrations,
+        and workflows requires careful planning.
+      </li>
 
-      <li><strong>Cost scaling:</strong> Pricing should be evaluated against the features actually required rather than contact volume alone.</li>
+      <li>
+        <strong>Cost scaling:</strong>
+        Pricing should be evaluated against the features actually
+        required rather than contact volume alone.
+      </li>
     </ul>
   </section>
 
@@ -213,9 +345,9 @@ footer a {
     </p>
 
     <p>
-      However, greater capability also means greater complexity. Businesses
-      should evaluate whether they will actually use those capabilities
-      before migrating.
+      However, greater capability also means greater complexity.
+      Businesses should evaluate whether they will actually use those
+      capabilities before migrating.
     </p>
   </section>
 
@@ -258,30 +390,51 @@ footer a {
 
     <div class="decision">
       <h3>Stay with Mailchimp if:</h3>
+
       <ul>
         <li>Your campaigns are relatively straightforward.</li>
         <li>Your current workflows meet your needs.</li>
         <li>You have little need for advanced CRM automation.</li>
-        <li>The migration effort would outweigh the expected benefit.</li>
+        <li>
+          The migration effort would outweigh the expected benefit.
+        </li>
       </ul>
     </div>
 
     <div class="decision">
       <h3>Consider ActiveCampaign if:</h3>
+
       <ul>
-        <li>You need more sophisticated automated customer journeys.</li>
-        <li>You need stronger CRM and marketing alignment.</li>
-        <li>You rely heavily on behavioral segmentation.</li>
-        <li>The additional capabilities have a clear commercial purpose.</li>
+        <li>
+          You need more sophisticated automated customer journeys.
+        </li>
+
+        <li>
+          You need stronger CRM and marketing alignment.
+        </li>
+
+        <li>
+          You rely heavily on behavioral segmentation.
+        </li>
+
+        <li>
+          The additional capabilities have a clear commercial purpose.
+        </li>
       </ul>
     </div>
 
     <div class="decision">
       <h3>Consider another alternative if:</h3>
+
       <ul>
         <li>Neither platform matches your workflow.</li>
+
         <li>Your requirements are highly specialized.</li>
-        <li>Another platform offers a substantially better fit for your budget and use case.</li>
+
+        <li>
+          Another platform offers a substantially better fit for your
+          budget and use case.
+        </li>
       </ul>
     </div>
   </section>
@@ -311,7 +464,9 @@ footer a {
       provider before purchasing.
     </p>
 
-    <p><strong>Last reviewed:</strong> August 2026</p>
+    <p>
+      <strong>Last reviewed:</strong> August 2026
+    </p>
 
     <p>
       This guide is intended as independent decision-support information
@@ -328,14 +483,21 @@ footer a {
 
 <footer>
   <div class="footer-inner">
+
     <strong>ValuePulse</strong>
+
     <p>
       Practical B2B &amp; SaaS Opportunity Research
     </p>
+
     <p>
       Independent research, comparisons, and practical decision guides.
     </p>
-    <p>© 2026 ValuePulse</p>
+
+    <p>
+      © 2026 ValuePulse
+    </p>
+
   </div>
 </footer>
 
